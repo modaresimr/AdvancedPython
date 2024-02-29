@@ -348,4 +348,69 @@ Cette opération générera un rapport complet sur le jeu de données Titanic, c
 
 
 
+
+
+
+
+
+
+
+
+# Création de différents ensembles de données pour les survivants et les non-survivants
+```
+df_survivants = df[df['Survived'] == 1]
+df_nonsurvivants = df[df['Survived'] == 0]
+```
+Ces lignes de code créent deux ensembles de données distincts : l'un pour les passagers qui ont survécu et l'autre pour ceux qui n'ont pas survécu.
+
+# Troisième distribution pour le test d'hypothèse - Tarifs des survivants
+```
+dist_c = df_survivants['Fare'].dropna()
+dist_d = df_nonsurvivants['Fare'].dropna()
+```
+Cette ligne de code sélectionne les tarifs des passagers survivants et non survivants.
+
+
+# Création d'une variable catégorielle pour les âges
+```
+df['AgeCat'] = ''
+df['AgeCat'].loc[(df['Age'] < 18)] = 'jeune'
+df['AgeCat'].loc[(df['Age'] >= 18) & (df['Age'] < 56)] = 'mature'
+df['AgeCat'].loc[(df['Age'] >= 56)] = 'senior'
+```
+Ces lignes de code ajoutent une nouvelle colonne 'AgeCat' à l'ensemble de données, en catégorisant les âges des passagers en jeunes, matures ou seniors.
+
+# Création d'une variable catégorielle pour les tailles de famille
+```
+df['FamilySize'] = ''
+df['FamilySize'].loc[(df['SibSp'] <= 2)] = 'petite'
+df['FamilySize'].loc[(df['SibSp'] > 2) & (df['SibSp'] <= 5 )] = 'moyenne'
+df['FamilySize'].loc[(df['SibSp'] > 5)] = 'grande'
+```
+Ces lignes de code ajoutent une nouvelle colonne 'FamilySize' à l'ensemble de données, en catégorisant la taille de la famille des passagers en petite, moyenne ou grande.
+
+# Création d'une variable catégorielle pour déterminer si le passager est seul
+```
+df['IsAlone'] = ''
+df['IsAlone'].loc[((df['SibSp'] + df['Parch']) > 0)] = 'non'
+df['IsAlone'].loc[((df['SibSp'] + df['Parch']) == 0)] = 'oui'
+```
+
+Ces lignes de code ajoutent une nouvelle colonne 'IsAlone' à l'ensemble de données, pour indiquer si le passager est seul ou non.
+
+# Création d'une variable catégorielle pour indiquer si le passager est un jeune/homme mûr/senior ou une jeune/femme mûre/senior
+
+```
+df['SexCat'] = ''
+df['SexCat'].loc[(df['Sex'] == 'male') & (df['Age'] <= 21)] = 'jeunehomme'
+df['SexCat'].loc[(df['Sex'] == 'male') & ((df['Age'] > 21) & (df['Age']) < 50)] = 'hommemûr'
+df['SexCat'].loc[(df['Sex'] == 'male') & (df['Age'] > 50)] = 'seniorhomme'
+df['SexCat'].loc[(df['Sex'] == 'female') & (df['Age'] <= 21)] = 'jeunefemme'
+df['SexCat'].loc[(df['Sex'] == 'female') & ((df['Age'] > 21) & (df['Age']) < 50)] = 'femmemûre'
+df['SexCat'].loc[(df['Sex'] == 'female') & (df['Age'] > 50)] = 'seniorfemme'
+```
+
+Ces lignes de code ajoutent une nouvelle colonne 'SexCat' à l'ensemble de données, pour indiquer si le passager est un jeune homme, un homme mûr, un homme senior, une jeune femme, une femme mûre ou une femme senior.
+
 # [Exercice](e1.ipynb)
+
