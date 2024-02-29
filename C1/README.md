@@ -345,3 +345,7 @@ ProfileReport(data)
 ```
 
 Cette opération générera un rapport complet sur le jeu de données Titanic, comprenant des informations sur les valeurs manquantes, les statistiques descriptives, les distributions, les corrélation entre les variables, etc.
+
+
+
+# [Exercice](e1.ipynb)
