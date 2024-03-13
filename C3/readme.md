@@ -31,7 +31,7 @@ Le cerveau est si complexe, donc pour simplifier, nous l'organisons en couches i
 
 
 
-![Alt text](https://miro.medium.com/v2/resize:fit:679/1*bhFifratH9DjKqMBTeQG5A.gif)
+![Alt text](net.webp)
 
 Dans cet exemple, nous avons une couche d'entrée avec 3 neurones, une couche cachée avec 4 neurones, et enfin la couche de sortie avec 2 neurones.
 
