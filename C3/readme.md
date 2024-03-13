@@ -40,7 +40,7 @@ Dans cet exemple, nous avons une couche d'entrée avec 3 neurones, une couche ca
 
 Le deep learning est un type puissant d'apprentissage automatique basé sur des réseaux de neurones artificiels. Il est appelé "profond" car il utilise de nombreuses couches de neurones artificiels pour apprendre et prendre des décisions.
 
-![](imgs/deepnet.webp)
+![](imgs/deepnets.webp)
 
 
 
