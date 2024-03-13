@@ -6,7 +6,7 @@
 
 Un neurone est comme un petit messager dans votre cerveau. C'est une cellule spéciale qui aide votre cerveau à communiquer avec le reste de votre corps. Un neurone artificiel est comme une version informatique d'un vrai neurone. Il est conçu pour faire des choses similaires mais à l'intérieur d'un ordinateur. Voici une explication simple :
 
-![Neurone](image-1.png)
+![Neurone](imgs/image-1.png)
 
 **Parties d'un neurone** :
    - **Corps cellulaire (Calcul)** : C'est comme le centre de contrôle principal du neurone. Il contient toutes les choses importantes.
@@ -15,15 +15,15 @@ Un neurone est comme un petit messager dans votre cerveau. C'est une cellule sp�
 
 Pour simplifier, nous représentons un neurone sous forme de cercle. Les entrées sont représentées par des connexions sur le côté gauche du cercle, tandis que les sorties sont représentées par des lignes sur le côté droit.
 
-![Alt text](image-6.png)
+![Alt text](imgs/image-6.png)
 ### Réseau de neurones
 
 Vos cerveaux sont composés de réseaux de neurones. C'est l'idée d'un réseau de neurones artificiels. Nous configurons des neurones artificiels pour construire quelque chose comme un cerveau.
 
-![Réseau de neurones](image-2.png)
+![Réseau de neurones](imgs/image-2.png)
 
 Le cerveau est si complexe, donc pour simplifier, nous l'organisons en couches indépendantes. Chaque couche a un rôle différent :
-![Couches](image-3.png)
+![Couches](imgs/image-3.png)
 
 - **[Couche d'entrée]** : Cette couche prend des données, comme des pixels d'une image ou des mots d'une phrase.
 - **[Couches cachées]** : Ces couches traitent les données de différentes manières, trouvant des motifs ou des caractéristiques.
@@ -31,7 +31,7 @@ Le cerveau est si complexe, donc pour simplifier, nous l'organisons en couches i
 
 
 
-![Alt text](net.webp)
+![Alt text](imgs/net.webp)
 
 Dans cet exemple, nous avons une couche d'entrée avec 3 neurones, une couche cachée avec 4 neurones, et enfin la couche de sortie avec 2 neurones.
 
@@ -40,14 +40,14 @@ Dans cet exemple, nous avons une couche d'entrée avec 3 neurones, une couche ca
 
 Le deep learning est un type puissant d'apprentissage automatique basé sur des réseaux de neurones artificiels. Il est appelé "profond" car il utilise de nombreuses couches de neurones artificiels pour apprendre et prendre des décisions.
 
-![](https://miro.medium.com/v2/resize:fit:679/1*63sGPbvLLpvlD16hG1bvmA.gif)
+![](imgs/deepnet.webp)
 
 
 
 ### Fonction de Perte
 La fonction de perte est une mesure de l'erreur entre les prédictions d'un modèle et les vraies valeurs attendues. En d'autres termes, c'est une façon de quantifier à quel point les prédictions du modèle sont proches ou éloignées de ce qu'elles devraient être. 
 
-![](https://miro.medium.com/v2/resize:fit:1280/1*HpkKTeQiC9_YRz0c0yzdFA.gif)
+![](imgs/pert.webp)
 
 
 
@@ -60,7 +60,7 @@ Keras est une bibliothèque conviviale d'apprentissage profond qui simplifie le 
 
 ## Création d'un modèle séquentiel
 
-![Modèle séquentiel](image-5.png)
+![Modèle séquentiel](imgs/image-5.png)
 
 ### Importation des bibliothèques nécessaires
 
