@@ -99,7 +99,7 @@ model = Sequential([
 
 ### Compilation du modèle
 
-Une fois l'architecture du modèle définie, nous devons compiler le modèle. Cela implique de spécifier l'optimiseur, la fonction de perte et la métrique d'évaluation. Dans cet exemple, nous compilons le modèle en utilisant l'optimiseur Adam et l'entropie croisée catégorielle comme fonction de perte. De plus, nous spécifions 'accuracy', 'precision', et 'recall' comme métrique pour évaluer les performances du modèle.
+Une fois l'architecture du modèle définie, nous devons compiler le modèle. Cela implique de spécifier l'optimiseur, la fonction de perte et la métrique d'évaluation. Dans cet exemple, nous compilons le modèle en utilisant l'optimiseur Adam et l'entropie croisée catégorielle comme fonction de perte. De plus, nous spécifions 'accuracy' comme métrique pour évaluer les performances du modèle.
 
 ```python
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
@@ -132,7 +132,7 @@ print(f"Loss: {loss}, Accuracy: {accuracy}")
 ```
 
 
-Cet exemple sert d'introduction de base à la construction d'un modèle de réseau de neurones en utilisant Keras, en démontrant l'approche séquentielle pour ajouter des couches au modèle.
+
 
 
 
