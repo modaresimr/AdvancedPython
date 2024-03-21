@@ -67,3 +67,9 @@ L'erreur quadratique moyenne est souvent utilisée comme fonction de perte lors 
 
 
 
+
+
+
+<a target="_blank" href="https://colab.research.google.com/github/modaresimr/AdvancedPython/blob/main/C4/e4.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
