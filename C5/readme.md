@@ -130,3 +130,22 @@ En résumé, les GAN sont une technique puissante pour générer des données r�
 <a target="_blank" href="https://colab.research.google.com/github/modaresimr/AdvancedPython/blob/main/C5/example1.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
+
+# Exercice  1 
+<a target="_blank" href="https://colab.research.google.com/github/modaresimr/AdvancedPython/blob/main/C5/e5.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+# Exercice 2 (Supplémentaire)
+
+Pour trouver une collection d'images sur Internet, vous pouvez rechercher des ensembles de données ouverts disponibles sur des plateformes telles que Kaggle, le Répertoire de l'apprentissage automatique de l'UCI ou les sites Web des institutions de recherche. Voici les étapes à suivre :
+
+1. Accédez à un site Web ou à une plateforme proposant des ensembles de données ouverts.
+2. Recherchez des ensembles de données de classification d'images.
+3. Sélectionnez un ensemble de données contenant des images sans étiquettes (ou supprimez les étiquettes si elles sont incluses).
+4. Téléchargez l'ensemble de données.
+5. Prétraitez les images en les redimensionnant en 28x28 pixels.
+
+Comme nous ne disposons pas de suffisamment de matériel, vous devrez redimensionner les images en 28x28 pixels. Si cela fonctionne, vous pourrez ensuite les redimensionner à une résolution supérieure (Demandez à ChatGPT comment redimensionner les images).
+
+Après le prétraitement, vous pouvez utiliser les images redimensionnées comme entrée pour générer de nouvelles images à l'aide des GAN. Si les images redimensionnées fonctionnent bien, vous pouvez essayer de les redimensionner à nouveau pour voir si vous pouvez générer des images de résolution plus élevée. Gardez à l'esprit que la qualité des images générées peut varier en fonction de l'ensemble de données et de la complexité des images.
